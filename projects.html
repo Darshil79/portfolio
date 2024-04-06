@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Darshil Sonani</title>
+    <link rel="stylesheet" href="StyleSheet.css">
+    <link rel="icon" href="./image/favicon.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Truculenta:opsz,wght@12..72,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Darshil's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutME.html">About</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./contactME.html">Contact</a></li> 
+                    <li><img src="./image/sun.png" id="icon"></li>  
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="projects-container">
+        <h1>Projects</h1>
+
+        <div class="project-card">
+            <div class="project-title">Portfolio Website</div>
+            <div class="project-description">Designed and developed my personal portfolio website to showcase my skills, projects, and professional journey. Implemented a clean and modern design to create an engaging user experience.</div>
+            
+
+            <button onclick="showNotification()" class="project-link">View Project</button>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">E-commerce Platform</div>
+            <div class="project-description">Built a fully functional e-commerce platform with features such as product listings, cart, and checkout.</div>
+            <button onclick="showNotification()" class="project-link">View Project</button>
+        </div>
+
+        <div class="project-card">
+            <div class="project-title">Blog CMS</div>
+            <div class="project-description">Developed a content management system (CMS) for a blog with user authentication and post management.</div>
+            <button onclick="showNotification()" class="project-link">View Project</button>
+        </div>
+    </div>
+    <script src="Script.js"></script>
+</body>
+</html>
