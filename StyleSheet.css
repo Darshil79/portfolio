@@ -8,6 +8,8 @@
     --secondary-color:#fff;
     --servicecard-color:#333;
     --servicecardtext-color:#ccc;
+    --onhoverbg-color:#ffc107;
+    --onhover-color:#1a1a1a;
 
 
 }
@@ -17,6 +19,8 @@
     --secondary-color:#1a1a1a;
     --servicecard-color:#e1dcdc;
     --servicecardtext-color:#1a1a1a;
+    --onhoverbg-color:#ffc107;
+    --onhover-color:#fff
 }
 
 #icon{
@@ -24,12 +28,19 @@
     cursor: pointer;
 }
 body {
-    font-family:poppins;
+    font-family: poppins;
     margin: 0;
     padding: 0;
-    background-color: var(--primary-color); 
-    color: var(--secondary-color); 
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: background-color 1s ease;
+    opacity: 1;
 }
+
+.fade-out {
+    opacity: 0;
+}
+
 
 header {
     background-color: var(--primary-color); 
@@ -91,7 +102,8 @@ nav ul li a::before {
     transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
-nav ul li a:hover {
+nav ul li a:hover,
+nav ul li a.active {
     color: #ffc107;
 }
 
@@ -141,13 +153,24 @@ nav ul li a:hover::before {
     color: #e74c3c; 
 }
 
-.mainbodyleft .logo img {
-    margin-right: 10px;
-}
+
 
 .mainbodyright {
     width: 50%;
     margin: 20px;
+}
+
+.mainbodyleft .logo a{
+    /* margin-right: 10px; */
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    border: 2px solid #ffc107; 
+    font-size: 25px;
+    color: #ffc107;
+    border-radius: 50%;
+    margin: 5px 15px 25px 0;
+    padding: 5px;
 }
 
 .mainbodyright img {
@@ -158,9 +181,9 @@ nav ul li a:hover::before {
     margin: 20px; 
 }
 
-.mainbodyleft .logo img:hover {
-    transform: scale(1.2); 
-    transition: transform 0.3s ease-in-out; 
+.mainbodyleft .logo a:hover {
+    background:var(--onhoverbg-color);
+    color:var(--onhover-color);
 }
 
 
@@ -512,3 +535,5 @@ nav ul li a:hover::before {
         padding: 0 10px; 
     }
 }
+
+
